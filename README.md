@@ -1,4 +1,5 @@
-Logging Ingest for Fess [![Build Status](https://travis-ci.org/codelibs/fess-ingest-logger.svg?branch=master)](https://travis-ci.org/codelibs/fess-ingest-logger)
+Logging Ingest for Fess
+[![Java CI with Maven](https://github.com/codelibs/fess-ingest-logger/actions/workflows/maven.yml/badge.svg)](https://github.com/codelibs/fess-ingest-logger/actions/workflows/maven.yml)
 ==========================
 
 ## Overview
