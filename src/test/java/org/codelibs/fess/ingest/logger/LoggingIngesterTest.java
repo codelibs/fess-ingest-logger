@@ -18,6 +18,7 @@ package org.codelibs.fess.ingest.logger;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.codelibs.fess.entity.DataStoreParams;
 import org.codelibs.fess.util.ComponentUtil;
 import org.dbflute.utflute.lastaflute.LastaFluteTestCase;
 
@@ -56,7 +57,7 @@ public class LoggingIngesterTest extends LastaFluteTestCase {
     public void test_ds() {
         output = null;
         Map<String, Object> target = new HashMap<>();
-        Map<String, String> params = new HashMap<>();
+        DataStoreParams params = new DataStoreParams();
         target.put("aaa", "111");
         ingester.process(target, params);
         assertEquals("DATASTORE CRAWL: {aaa=111}", output);
