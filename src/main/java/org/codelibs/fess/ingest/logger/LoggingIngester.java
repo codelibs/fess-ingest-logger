@@ -17,6 +17,8 @@ package org.codelibs.fess.ingest.logger;
 
 import java.util.Map;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.codelibs.fess.crawler.entity.AccessResult;
 import org.codelibs.fess.crawler.entity.AccessResultData;
 import org.codelibs.fess.crawler.entity.ResponseData;
@@ -25,11 +27,9 @@ import org.codelibs.fess.crawler.transformer.Transformer;
 import org.codelibs.fess.entity.DataStoreParams;
 import org.codelibs.fess.ingest.Ingester;
 import org.codelibs.fess.util.ComponentUtil;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class LoggingIngester extends Ingester {
-    private static final Logger logger = LoggerFactory.getLogger(LoggingIngester.class);
+    private static final Logger logger = LogManager.getLogger(LoggingIngester.class);
 
     @Override
     public Map<String, Object> process(final Map<String, Object> target, final DataStoreParams params) {
