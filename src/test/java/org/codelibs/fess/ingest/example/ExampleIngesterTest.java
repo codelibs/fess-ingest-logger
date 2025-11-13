@@ -13,7 +13,7 @@
  * either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
-package org.codelibs.fess.ingest.logger;
+package org.codelibs.fess.ingest.example;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -22,9 +22,9 @@ import org.codelibs.fess.entity.DataStoreParams;
 import org.codelibs.fess.util.ComponentUtil;
 import org.dbflute.utflute.lastaflute.LastaFluteTestCase;
 
-public class LoggingIngesterTest extends LastaFluteTestCase {
+public class ExampleIngesterTest extends LastaFluteTestCase {
 
-    private LoggingIngester ingester;
+    private ExampleIngester ingester;
 
     String output = null;
 
@@ -41,7 +41,7 @@ public class LoggingIngesterTest extends LastaFluteTestCase {
     @Override
     public void setUp() throws Exception {
         super.setUp();
-        ingester = new LoggingIngester() {
+        ingester = new ExampleIngester() {
             protected void log(final String format, final Object data) {
                 output = String.format(format, data);
             }

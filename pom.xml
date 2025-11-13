@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>fess-ingest-logger</artifactId>
+	<artifactId>fess-ingest-example</artifactId>
 	<packaging>jar</packaging>
-	<name>Logger Ingester</name>
+	<name>Fess Ingest Example</name>
 	<version>15.0.0-SNAPSHOT</version>
 	<scm>
-		<connection>scm:git:git@github.com:codelibs/fess-ingest-logger.git</connection>
-		<developerConnection>scm:git:git@github.com:codelibs/fess-ingest-logger.git</developerConnection>
-		<url>https://github.com/codelibs/fess-ingest-logger</url>
+		<connection>scm:git:git@github.com:codelibs/fess-ingest-example.git</connection>
+		<developerConnection>scm:git:git@github.com:codelibs/fess-ingest-example.git</developerConnection>
+		<url>https://github.com/codelibs/fess-ingest-example</url>
 	</scm>
 	<parent>
 		<groupId>org.codelibs.fess</groupId>

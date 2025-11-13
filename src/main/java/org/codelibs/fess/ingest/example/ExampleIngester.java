@@ -13,7 +13,7 @@
  * either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
-package org.codelibs.fess.ingest.logger;
+package org.codelibs.fess.ingest.example;
 
 import java.util.Map;
 
@@ -28,8 +28,8 @@ import org.codelibs.fess.entity.DataStoreParams;
 import org.codelibs.fess.ingest.Ingester;
 import org.codelibs.fess.util.ComponentUtil;
 
-public class LoggingIngester extends Ingester {
-    private static final Logger logger = LogManager.getLogger(LoggingIngester.class);
+public class ExampleIngester extends Ingester {
+    private static final Logger logger = LogManager.getLogger(ExampleIngester.class);
 
     @Override
     public Map<String, Object> process(final Map<String, Object> target, final DataStoreParams params) {
